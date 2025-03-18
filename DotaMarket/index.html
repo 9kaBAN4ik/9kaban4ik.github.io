@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wireframe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header__logo">
+      <img src="img/dota-logo.png" alt="Dota 2 Logo" />
+      <span class="header__tagline">Dota 2 Market</span>
+    </div>
+    <nav class="header__menu">
+      <a href="index.html">Главная</a>
+      <a href="about.html">О нас</a>
+      <a href="market.html">Корзина</a>
+    </nav>
+    <button id="themeToggle" class="header__login-btn">Сменить тему</button>
+    <button class="header__login-btn">Войти</button>
+  </header>
+
+   <!-- Hero -->
+   <section class="hero">
+    <img src="img/TB-DOTA2.jpg" alt="Dota 2 Main Banner" class="hero__image" />
+  </section>
+
+  <!-- Video -->
+  <section class="video">
+    <iframe class="video__iframe"
+      src="https://www.youtube.com/embed/-cSFPIwMEq4"
+      title="Dota 2 Trailer"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- Карусель -->
+<section class="carousel">
+  <div class="carousel__container" id="carouselContainer">
+    <div class="carousel__slide">
+      <img src="img/screenshot/dota2-game-moment-1.webp" alt="Карусель 1" class="carousel__image" />
+    </div>
+    <div class="carousel__slide">
+      <img src="img/screenshot/dota2-game-moment-2.webp" alt="Карусель 2" class="carousel__image" />
+    </div>
+    <div class="carousel__slide">
+      <img src="img/screenshot/dota2-game-moment-3.webp" alt="Карусель 3" class="carousel__image" />
+    </div>
+    <div class="carousel__slide">
+      <img src="img/screenshot/dota2-game-moment-4.png" alt="Карусель 4" class="carousel__image" />
+    </div>
+    <div class="carousel__slide">
+      <img src="img/screenshot/dota2-game-moment-5.jpg" alt="Карусель 5" class="carousel__image" />
+    </div>
+  </div>
+  <!-- Точки-индикаторы -->
+  <div class="carousel__dots" id="carouselDots">
+    <span class="carousel__dot active" data-slide="0"></span>
+    <span class="carousel__dot" data-slide="1"></span>
+    <span class="carousel__dot" data-slide="2"></span>
+    <span class="carousel__dot" data-slide="3"></span>
+    <span class="carousel__dot" data-slide="4"></span>
+  </div>
+</section>
+
+  <section class="benefits">
+    <h2>Преимущества</h2>
+  
+    <!-- Кнопки (по количеству слайдов) -->
+    <input type="radio" name="benefit" id="b-1" checked>
+    <input type="radio" name="benefit" id="b-2">
+    <input type="radio" name="benefit" id="b-3">
+  
+    <!-- Внешний контейнер для слайдера и стрелок -->
+    <div class="benefits__slider-container">
+      <!-- Контейнер со слайдами -->
+      <div class="benefits__slider">
+        <!-- Слайд 1 -->
+        <div class="benefits__item">
+          <h3>Огромный мир Dota 2 с уникальными героями</h3>
+          <p>Dota 2 — это масштабная вселенная с более чем сотней уникальных героев, каждый из которых обладает собственными способностями, историей и стилем игры. От беспощадного Пуджа до хитрого Инвокера — каждый найдет героя по душе.</p>
+        </div>
+        <!-- Слайд 2 -->
+        <div class="benefits__item">
+          <h3>Командные сражения и стратегия</h3>
+          <p>Dota 2 славится своими тактическими боями 5 на 5, где успех зависит от слаженной командной работы, стратегии и индивидуального мастерства. Выбирайте роли, продумывайте тактики и побеждайте противников в напряженных матчах.</p>
+        </div>
+        <!-- Слайд 3 -->
+        <div class="benefits__item">
+          <h3>Киберспорт и турниры мирового уровня</h3>
+          <p>Dota 2 — один из ведущих киберспортивных дисциплин с грандиозными турнирами, такими как The International, где разыгрываются многомиллионные призовые. Соревнуйтесь, поднимайтесь в рейтинге и, возможно, станете частью мировой сцены.</p>
+        </div>
+      </div>
+      <!-- Кнопки (стрелки), как у testimonials -->
+      <!-- Для слайда 1 (b-1) -->
+      <label for="b-3" class="benefits__button benefits__button--prev btn-b1">&lt;</label>
+      <label for="b-2" class="benefits__button benefits__button--next btn-b1">&gt;</label>
+  
+      <!-- Для слайда 2 (b-2) -->
+      <label for="b-1" class="benefits__button benefits__button--prev btn-b2">&lt;</label>
+      <label for="b-3" class="benefits__button benefits__button--next btn-b2">&gt;</label>
+  
+      <!-- Для слайда 3 (b-3) -->
+      <label for="b-2" class="benefits__button benefits__button--prev btn-b3">&lt;</label>
+      <label for="b-1" class="benefits__button benefits__button--next btn-b3">&gt;</label>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Отзывы</h2>
+    
+    <!-- Радиокнопки (по количеству слайдов) -->
+    <input type="radio" name="testimonial" id="t-1" checked>
+    <input type="radio" name="testimonial" id="t-2">
+    <input type="radio" name="testimonial" id="t-3">
+
+    <!-- Внешний контейнер для слайдера и стрелок -->
+    <div class="testimonials__slider-container">
+      <!-- Контейнер со слайдами -->
+      <div class="testimonials__slider">
+        <!-- Слайд 1 -->
+        <div class="testimonials__item">
+          <img src="img/avatar/YATOROGOD-AVA.webp" alt="Avatar 1" />
+          <p>«Smeels like Team Spirit.»</p>
+          <span>- YatoroGOD</span>
+        </div>
+        <!-- Слайд 2 -->
+        <div class="testimonials__item">
+          <img src="img/avatar/RAMZES666-AVA.webp" alt="Avatar 2" />
+          <p>«Это самое лучшее,когда ты приходишь на сларке в два милишника и тебя типает сакса на 7 минуте,а ты 0 5...»</p>
+          <span>-RAMZES666</span>
+        </div>
+        <!-- Слайд 3 -->
+        <div class="testimonials__item">
+          <img src="img/avatar/DJ_WHITE-AVA.jfif" alt="Avatar 3" />
+          <p>«Когда-нибудь Дота 2 выйдет из бета....»</p>
+          <span>- DJ_WHITE</span>
+        </div>
+      </div>
+      
+      <!-- Кнопки (стрелки) -->
+      <!-- Для слайда 1 -->
+      <label for="t-3" class="testimonials__button testimonials__button--prev btn-1">&lt;</label>
+      <label for="t-2" class="testimonials__button testimonials__button--next btn-1">&gt;</label>
+      
+      <!-- Для слайда 2 -->
+      <label for="t-1" class="testimonials__button testimonials__button--prev btn-2">&lt;</label>
+      <label for="t-3" class="testimonials__button testimonials__button--next btn-2">&gt;</label>
+      
+      <!-- Для слайда 3 -->
+      <label for="t-2" class="testimonials__button testimonials__button--prev btn-3">&lt;</label>
+      <label for="t-1" class="testimonials__button testimonials__button--next btn-3">&gt;</label>
+    </div>
+  </section>
+  
+      <!-- Кнопки переключения -->
+      <button class="testimonials__button testimonials__button--prev" id="prevBtn" aria-label="Предыдущий отзыв">&lt;</button>
+      <button class="testimonials__button testimonials__button--next" id="nextBtn" aria-label="Следующий отзыв">&gt;</button>
+    </div>
+  </section>
+  
+
+  <!-- Особенности (3 блока) -->
+  <section class="features">
+  <h2>Особенности</h2>
+  <div class="features__items">
+    <div class="features__item">
+      <h3>Глубокий и таинственный лор вселенной Dota 2</h3>
+      <p>Dota 2 славится богатой вселенной, полной тайн, скрытых связей между героями и древними существами. Каждая битва на карте — часть великой истории, которую игроки раскрывают через описания героев, предметов и редкие внутриигровые события.</p>
+    </div>
+    <div class="features__item">
+      <h3>Подходит как для новичков, так и для профессионалов</h3>
+      <p>Dota 2 предлагает удобный вход для новичков через обучение и ботов, а также бесконечную глубину для опытных игроков. Система рейтинговых игр, турниры и кастомные режимы позволяют каждому найти свой уровень вызова и прогрессировать.</p>
+    </div>
+    <div class="features__item">
+      <h3>Живой мир и постоянные обновления</h3>
+      <p>Мир Dota 2 постоянно меняется: регулярные обновления баланса, сезонные события и новые герои. Каждый патч приносит свежие механики, меняя мету и создавая новые стратегии, что удерживает интерес игроков по всему миру.</p>
+    </div>
+  </div>
+  </section>
+
+<!-- Карточки товаров/услуг (Products) -->
+<section class="products">
+  <h2>Наши предложения</h2>
+  <div class="products__container">
+    <div class="product__card">
+      <img src="img/products/Arcane-Pudge-DOTA2.jfif" alt="Product 1" class="product__image" />
+      <h3 class="product__title">Arcana Pudge</h3>
+      <p class="product__description">Стоимость: 30 евро</p>
+      <h3 class="product__title">Осталось:</h3>
+      <div class="product__quantity">
+        <div class="quantity__bar"></div>
+        <span class="quantity__number">0</span>
+      </div>
+    </div>
+    <div class="product__card">
+      <img src="img/products/Lina-Arcana-DOTA2.webp" alt="Product 2" class="product__image" />
+      <h3 class="product__title">Arcana Lina»</h3>
+      <p class="product__description">Стоимость: 30 евро</p>
+      <h3 class="product__title">Осталось:</h3>
+      <div class="product__quantity">
+        <div class="quantity__bar"></div>
+        <span class="quantity__number">0</span>
+      </div>
+    </div>
+    <div class="product__card">
+      <img src="img/products/DOTA2-ARCANE-TERRORBLADE.jfif" alt="Product 3" class="product__image" />
+      <h3 class="product__title">Arcana TerrorBlade»</h3>
+      <p class="product__description">Стоимость: 30 евро</p>
+      <h3 class="product__title">Осталось:</h3>
+      <div class="product__quantity">
+        <div class="quantity__bar"></div>
+        <span class="quantity__number">0</span>
+      </div>
+    </div>
+    <div class="product__card">
+      <img src="img/products/DOTA-ARCANA-PHANTOM-ASSASIN.jfif" alt="Product 4" class="product__image" />
+      <h3 class="product__title">Arcana Phantom Assasin</h3>
+      <p class="product__description">Стоимость: 30 евро</p>
+      <h3 class="product__title">Осталось:</h3>
+      <div class="product__quantity">
+        <div class="quantity__bar"></div>
+        <span class="quantity__number">0</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="products__button-container">
+    <button class="products__see-all-btn">Увидеть все предложения</button>
+  </div>
+</section>
+
+  <!-- Sign up -->
+  <section class="signup">
+    <h2>Присоединяйтесь и начните играть!</h2>
+    <form class="signup__form">
+      <input type="email" placeholder="Ваш Email" required />
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal__content">
+      <h2>Введите данные</h2>
+      <form id="modalForm" class="modal__form">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required />
+  
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required />
+  
+        <div class="modal__actions">
+          <button type="submit">Отправить</button>
+          <button type="button" id="closeModal">Закрыть</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <nav class="footer__menu">
+      <a href="#">Главная</a>
+      <a href="#">Контакты</a>
+    </nav>
+    <ul class="footer__social">
+      <li>
+          <a href="https://twitter.com/DOTA2" class="footer__link">
+              <img src="img/socials/x.png" alt="TwitterX link">
+          </a>
+      </li>
+      <li>
+          <a href="https://www.instagram.com/dota2/" class="footer__link">
+              <img src="img/socials/instagram.png" alt="Instagram link">
+          </a>
+      </li>
+      <li>
+          <a href="https://www.facebook.com/dota2/" class="footer__link">
+              <img src="img/socials/facebook.png" alt="Facebook link">
+          </a>
+      </li>
+      <li>
+          <a href="https://www.youtube.com/user/dota2" class="footer__link">
+              <img src="img/socials/youtube.webp" alt="YouTube link">
+          </a>
+      </li>
+  </ul>
+  </footer>
+
+  <script src="js/button.js" defer></script>
+  <script src="js/submit.js" defer></script>
+  <script src="js/carousel.js" defer></script>
+  <script src="js/quantity.js" defer></script>
+</body>
+</html>
