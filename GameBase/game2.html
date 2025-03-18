@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <meta name="description" content="GameBase - это портал об играх" />
+    <meta name="keywords" content="игры, онлайн игры, гейминг, обзоры игр"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <header>
+            <div class="logo">
+                <div class="logo_text">
+                    <h1><a href="index.html">GameBase</a></h1>
+                    <h2>Игры - наша страсть!</h2>
+                </div>  
+            </div>
+
+           <nav> 
+                <ul class="menu">
+                    <li class="selected"><a href="index.html">Главная</a></li>
+                    <li><a href="games.html">Игры</a></li> <!-- Добавленная кнопка -->
+                    <li><a href="consoles.html">Консоли</a></li>
+                    <li><a href="rating.html">Рейтинг игр</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="game2_en.html">English</a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="site_content">
+
+            <div class="sidebar_container">
+                <div class="sidebar">
+                    <h2>Поиск</h2>
+                    <form method="post" action="#" id="search_form">
+                        <input type="search" name="search_field" placeholder="ваш запрос"/>
+                        <input type="submit" class="btn" value="найти"/>
+                    </form>
+                </div>
+
+                <div class="sidebar">
+                    <h2>Вход</h2>
+                    <form method="post" action="#" id="login">
+                        <input type="text" name="login_field" placeholder="логин"/>
+                        <input type="password" name="password_field" placeholder="пароль"/>
+                        <input type="submit" class="btn" value="вход"/>
+                        <div class="lables_passreg_text">
+                            <span><a href="#">Забыли пароль?</a></span> | <span><a href="#">Регистрация</a></span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sidebar">
+                    <h2>Новости</h2>
+                    <span>12.01.2025</span>
+                    <p>Запущен новый раздел с обзорами игр.</p>
+                    <a href="#">Читать</a>
+                </div>
+
+                <div class="sidebar">
+                    <h2>Рейтинг игр</h2>
+                    <ul>
+                        <li><a href="game1.html">Grand Theft Auto V</a><span class="rating_sidebar">9.5</span></li>
+                        <li><a href="game2.html">Mortal Kombat 11</a><span class="rating_sidebar">8.9</span></li>
+                        <li><a href="game3.html">Red Dead Redemption 2</a><span class="rating_sidebar">9.3</span></li>
+                        <li><a href="game6.html">Hogwarts Legacy</a><span class="rating_sidebar">9.7</span></li>
+                        <li><a href="game5.html">The Legend of Zelda</a><span class="rating_sidebar">9.7</span></li>
+                        <li><a href="game4.html">Genshin Impact</a><span class="rating_sidebar">9.7</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="content_contact">
+
+                <h1>Mortal Kombat 11</h1>
+            
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MtchqTbPq3A" frameborder="0" allowfullscreen></iframe>
+            
+                <div class="info_game_page">
+                    <span class="label">Рейтинг: </span><span class="value">9.0 / 10</span>
+                    <span class="label">Год: </span><span class="value">2019</span>
+                    <span class="label">Разработчик: </span><span class="value">NetherRealm Studios</span>
+                </div>
+                <hr>
+                <h2>Описание игры: Mortal Kombat 11</h2>
+                <div class="description_game">
+                    <img src="img/games/MK XI.jfif" alt="Mortal Kombat 11">
+                    <p>"Mortal Kombat 11" — это жестокая файтинг-игра, которая сочетает классических персонажей и механики игры с современными визуальными эффектами. Игра включает богатый сюжетный режим, глубокую настройку персонажей, жестокие фаталити и широкий выбор бойцов. С добавлением новых персонажей и механик Mortal Kombat 11 является обязательной игрой для фанатов франшизы и файтинг-игр в целом.</p>
+                </div>
+            
+                <hr>
+                <h2>Отзывы о Mortal Kombat 11</h2>
+            
+                <div class="reviews">
+                    <div class="review_name">Сергей</div>
+                    <div class="preview_text">Лучшая игра Mortal Kombat! Быстрое действие и потрясающие фаталити.</div>
+                </div>
+            
+                <div class="reviews">
+                    <div class="review_name">Елена</div>
+                    <div class="preview_text">Отличный сюжетный режим и идеальный баланс в боях.</div>
+                </div>
+            
+                <div class="send">
+                    <form method="post" action="#" id="review">
+                        <input type="text" name="review_name" placeholder="Ваше имя">
+                        <textarea name="review_text" placeholder="Ваш отзыв"></textarea>
+                        <input class="btn" type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+            
+        <footer>
+            <p>
+                <a href="index.html">Главная</a>
+                <a href="games.html">Игры</a>
+                <a href="consoles.html">Консоли</a>
+                <a href="rating.html">Рейтинг игр</a>
+                <a href="contact.html">Контакты</a>
+            </p>
+            <p>gamebase.ru</p>
+        </div>
+    </div>
+
+</body>
+</html>
